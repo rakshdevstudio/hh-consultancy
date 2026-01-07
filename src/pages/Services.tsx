@@ -80,7 +80,7 @@ const serviceCategories = [
     icon: BadgeCheck,
     title: "Trade License",
     description: "Assistance with trade license registration, renewal, and regulatory documentation.",
-    image: registrationImg,
+    image: bookkeepingImg,
     services: [
       "Trade License Registration",
       "License Renewal",
@@ -94,7 +94,7 @@ const serviceCategories = [
     icon: ClipboardList,
     title: "Labour License",
     description: "Labour license registration and statutory compliance for businesses across sectors.",
-    image: registrationImg,
+    image: payrollImg,
     services: [
       "Labour License Registration",
       "Statutory Compliance",
@@ -108,7 +108,7 @@ const serviceCategories = [
     icon: FileText,
     title: "Food License (FSSAI)",
     description: "Complete support for food business registration, licensing, and regulatory compliance.",
-    image: registrationImg,
+    image: incomeTaxImg,
     services: [
       "FSSAI Registration",
       "Food License Application",
@@ -122,7 +122,7 @@ const serviceCategories = [
     icon: Scale,
     title: "Labour Law Consultancy",
     description: "Advisory and compliance support for labour laws, employee regulations, and statutory filings.",
-    image: registrationImg,
+    image: gstTaxImg,
     services: [
       "Labour Law Advisory",
       "Employee Regulations Compliance",
