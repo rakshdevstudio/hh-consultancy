@@ -17,6 +17,7 @@ import bookkeepingImg from "@/assets/services/bookkeeping.jpg";
 import payrollImg from "@/assets/services/payroll.jpg";
 import incomeTaxImg from "@/assets/services/income-tax.jpg";
 import auditImg from "@/assets/services/audit.jpg";
+import tradelicenseImg from "@/assets/services/tradelicense.png";
 
 const serviceCategories = [
   {
@@ -80,7 +81,7 @@ const serviceCategories = [
     icon: BadgeCheck,
     title: "Trade License",
     description: "Assistance with trade license registration, renewal, and regulatory documentation.",
-    image: registrationImg,
+    image: tradelicenseImg,
     services: [
       "Trade License Registration",
       "License Renewal",
