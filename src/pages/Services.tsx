@@ -18,6 +18,7 @@ import payrollImg from "@/assets/services/payroll.jpg";
 import incomeTaxImg from "@/assets/services/income-tax.jpg";
 import auditImg from "@/assets/services/audit.jpg";
 import tradelicenseImg from "@/assets/services/tradelicense.png";
+import labourlicenseImg from "@/assets/services/labourlicense.jpg";
 
 const serviceCategories = [
   {
@@ -95,7 +96,7 @@ const serviceCategories = [
     icon: ClipboardList,
     title: "Labour License",
     description: "Labour license registration and statutory compliance for businesses across sectors.",
-    image: payrollImg,
+    image: labourlicenseImg,
     services: [
       "Labour License Registration",
       "Statutory Compliance",
