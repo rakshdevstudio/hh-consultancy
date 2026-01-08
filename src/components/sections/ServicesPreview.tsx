@@ -50,6 +50,11 @@ const services = [
     title: "Labour Law Consultancy",
     description: "Advisory and compliance support for labour laws, employee regulations, and statutory filings.",
   },
+  {
+    icon: Users,
+    title: "Payroll",
+    description: "Preparation of salary statements and compliance for Provident Fund (PF), ESI, and Professional Tax.",
+  },
 ];
 
 export function ServicesPreview() {
