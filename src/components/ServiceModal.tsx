@@ -2,93 +2,93 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { X } from "lucide-react";
 
 const serviceContent: Record<string, string> = {
-  "Income Tax Consultancy": `H & H Consultancy provides expert income tax planning, filing, and compliance services for individuals, professionals, and businesses.
-We assist in accurate ITR preparation and timely submissions.
-Our services ensure full compliance with current tax laws and regulations.
-We help optimize tax liabilities through legal planning strategies.
-We handle tax notices, assessments, and departmental communications.
-Our advisory supports long-term financial efficiency.
-We maintain confidentiality and accuracy in all filings.
-We stay updated with changing tax regulations.
-We serve clients across multiple industries.
-Our goal is stress-free tax compliance for every client.`,
+  "Income Tax Consultancy": `Income Tax Consultancy helps individuals and businesses calculate, file, and manage their income tax correctly.
+It ensures that tax returns are prepared as per government rules.
+This service helps you avoid mistakes, penalties, and legal notices.
+It also helps in planning taxes to reduce liability in a legal way.
+Income tax consultants handle ITR filing for individuals and companies.
+They assist in responding to tax notices and assessments.
+They ensure all income sources are properly reported.
+This service saves time and prevents costly errors.
+It keeps your finances compliant with tax laws.
+It gives peace of mind during tax filing and assessments.`,
 
-  "GST Services": `We offer complete GST registration, return filing, compliance, and advisory services.
-Our team ensures timely GST filings to avoid penalties.
-We handle GST assessments, reconciliations, and notices.
-We assist in registration, amendments, and cancellations.
-Our advisory helps businesses remain tax-efficient.
-We ensure proper documentation and regulatory adherence.
-We support businesses of all sizes and sectors.
-We simplify GST compliance processes.
-We monitor changes in GST law and implementation.
-Our goal is seamless and compliant GST operations.`,
+  "GST Services": `GST Services help businesses register, file returns, and comply with Goods and Services Tax laws.
+Every GST-registered business must file regular returns.
+This service ensures returns are filed correctly and on time.
+It helps avoid late fees, penalties, and legal issues.
+It manages GST registration, amendments, and cancellations.
+It also handles GST notices, audits, and assessments.
+Businesses get help with documentation and tax calculations.
+This service keeps your business legally compliant.
+It reduces compliance burden for business owners.
+It ensures smooth GST operations without errors.`,
 
-  "Company Registration": `We provide end-to-end company registration services across all business structures.
-Our services cover Proprietorship, Partnership, LLP, and Private Limited companies.
-We handle documentation, filings, and statutory approvals.
-We ensure compliance with MCA regulations.
-We guide entrepreneurs through incorporation procedures.
-We help avoid delays and regulatory issues.
-We also assist with post-registration compliance.
-Our process is transparent and efficient.
-We support startups and established businesses.
-Our aim is smooth and legally compliant business formation.`,
+  "Company Registration": `Company Registration is the legal process of forming a business entity.
+It allows a business to operate officially under government laws.
+This service helps register Proprietorships, Partnerships, LLPs, and Private Limited companies.
+It includes preparing documents and submitting applications to authorities.
+Registration gives your business legal identity.
+It is required to open bank accounts and enter contracts.
+It protects business owners legally.
+It ensures compliance with government regulations.
+This service helps avoid legal complications.
+It enables your business to operate legally and professionally.`,
 
-  "Audit Assignments": `H & H Consultancy offers professional internal, statutory, and tax audit services.
-We ensure financial accuracy and regulatory compliance.
-Our audits identify risks, discrepancies, and improvement areas.
-We follow structured documentation and reporting standards.
-We help maintain transparency in financial statements.
-We support statutory and regulatory audits.
-We ensure a true and fair view of business accounts.
-We protect businesses from legal and financial risks.
-We maintain strict confidentiality.
-Our objective is strong compliance and financial integrity.`,
+  "Audit Assignments": `Audit Assignments involve reviewing financial records to verify accuracy and compliance.
+Audits ensure that accounts are properly maintained.
+They help detect errors, fraud, and financial risks.
+Businesses may require audits for statutory or tax purposes.
+This service checks whether records follow accounting and legal standards.
+It ensures transparency in financial reporting.
+Audits help build trust with regulators, investors, and banks.
+They reduce the risk of penalties and legal issues.
+They improve financial control within the business.
+They ensure your accounts reflect a true and fair position.`,
 
-  "Trade License": `We assist businesses in obtaining and renewing trade licenses.
-Our team handles applications, documentation, and approvals.
-We ensure compliance with local municipal regulations.
-Trade licenses are mandatory for commercial establishments.
-We help avoid penalties and operational disruptions.
-We also support license amendments and renewals.
-We coordinate with government authorities.
-We simplify the regulatory process for business owners.
-We ensure timely approvals.
-Our aim is hassle-free legal operation of your business.`,
+  "Trade License": `A Trade License is a government permit required to legally operate a business.
+It is issued by the local municipal authority.
+This service helps businesses apply for and renew trade licenses.
+It ensures the business complies with local laws and regulations.
+Without a trade license, a business may face penalties or closure.
+The service manages documentation and approvals.
+It helps avoid legal and operational issues.
+It is mandatory for shops, offices, and commercial establishments.
+It ensures your business is legally recognized by authorities.
+It allows smooth and lawful business operations.`,
 
-  "Labour License": `We provide complete support for labour license registration and compliance.
-We assist employers in meeting statutory workforce regulations.
-Our services cover documentation, filing, and renewals.
-Labour licenses are essential for legally employing workers.
-We help prevent penalties and legal complications.
-We ensure adherence to labour department guidelines.
-We support businesses across various industries.
-We manage regulatory filings efficiently.
-We maintain accuracy and compliance.
-Our goal is legally secure workforce management.`,
+  "Labour License": `A Labour License is required for businesses employing workers.
+It ensures compliance with labour laws and employment regulations.
+This service helps employers apply for and renew labour licenses.
+It manages documentation and statutory filings.
+It helps avoid fines and legal disputes.
+It ensures proper workforce regulation.
+It supports compliance with labour department rules.
+It protects both employers and employees legally.
+It helps maintain lawful employment practices.
+It ensures your business follows labour regulations correctly.`,
 
-  "Food License (FSSAI)": `We offer end-to-end assistance for FSSAI food license registration.
-We support restaurants, manufacturers, distributors, and food businesses.
-We handle applications, documentation, and regulatory approvals.
-Food licenses ensure compliance with food safety laws.
-We help avoid fines and business disruptions.
-We assist with renewals and modifications.
-We ensure adherence to FSSAI standards.
-We guide businesses through compliance procedures.
-We ensure timely approvals.
-Our goal is legally compliant and safe food operations.`,
+  "Food License (FSSAI)": `A Food License (FSSAI) is mandatory for businesses involved in food production or sale.
+It ensures compliance with food safety standards.
+This service helps register food businesses under FSSAI.
+It handles documentation and application processes.
+It ensures your food business operates legally.
+It helps avoid fines, closure, and legal action.
+It is required for restaurants, manufacturers, and distributors.
+It builds customer trust in food safety.
+It ensures hygiene and safety regulations are followed.
+It allows lawful and professional food business operations.`,
 
-  "Labour Law Consultancy": `We provide expert consultancy on labour law compliance and employee regulations.
-We help businesses understand statutory obligations.
-Our services cover wage laws, employee benefits, and workplace regulations.
-We ensure compliance with government labour policies.
-We reduce legal risks and operational challenges.
-We assist with documentation and regulatory filings.
-We guide HR and management on best practices.
-We maintain confidentiality and legal accuracy.
-We offer practical compliance solutions.
-Our goal is a legally compliant and stable workforce.`,
+  "Labour Law Consultancy": `Labour Law Consultancy helps businesses understand and follow employment laws.
+It covers rules related to wages, working hours, and employee benefits.
+This service ensures compliance with government labour regulations.
+It helps prevent legal disputes and penalties.
+It guides employers on statutory obligations.
+It assists in handling inspections and audits.
+It supports documentation and regulatory filings.
+It ensures fair and lawful employment practices.
+It protects businesses from labour-related legal risks.
+It helps maintain a legally compliant workplace.`,
 };
 
 interface ServiceModalProps {
