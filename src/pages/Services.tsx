@@ -17,8 +17,10 @@ import bookkeepingImg from "@/assets/services/bookkeeping.jpg";
 import payrollImg from "@/assets/services/payroll.jpg";
 import incomeTaxImg from "@/assets/services/income-tax.jpg";
 import auditImg from "@/assets/services/audit.jpg";
-import tradelicenseImg from "@/assets/services/tradelicense.png";
+import tradelicenseImg from "@/assets/services/tradelicense.jpg";
 import labourlicenseImg from "@/assets/services/labourlicense.jpg";
+import fssaiImg from "@/assets/services/fssai.jpg";
+import labourlawImg from "@/assets/services/Labourlaw.jpg";
 
 const serviceCategories = [
   {
@@ -110,7 +112,7 @@ const serviceCategories = [
     icon: FileText,
     title: "Food License (FSSAI)",
     description: "Complete support for food business registration, licensing, and regulatory compliance.",
-    image: bookkeepingImg,
+    image: fssaiImg,
     services: [
       "FSSAI Registration",
       "Food License Application",
@@ -124,7 +126,7 @@ const serviceCategories = [
     icon: Scale,
     title: "Labour Law Consultancy",
     description: "Advisory and compliance support for labour laws, employee regulations, and statutory filings.",
-    image: auditImg,
+    image: labourlawImg,
     services: [
       "Labour Law Advisory",
       "Employee Regulations Compliance",
