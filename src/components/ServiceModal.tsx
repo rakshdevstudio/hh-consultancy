@@ -89,6 +89,17 @@ It supports documentation and regulatory filings.
 It ensures fair and lawful employment practices.
 It protects businesses from labour-related legal risks.
 It helps maintain a legally compliant workplace.`,
+
+  "Payroll": `Payroll services manage employee salary processing and statutory deductions.
+This service ensures accurate preparation of monthly salary statements.
+It handles Provident Fund (PF), ESI, and Professional Tax compliance.
+It ensures correct calculation of employee earnings and deductions.
+It helps employers meet statutory filing and payment deadlines.
+It reduces errors in salary processing and compliance reporting.
+It maintains proper payroll records for audits and inspections.
+It supports businesses in managing employee compensation efficiently.
+It ensures adherence to labour and tax regulations.
+It allows employers to focus on operations while payroll is handled professionally.`,
 };
 
 interface ServiceModalProps {
@@ -117,4 +128,3 @@ export function ServiceModal({ open, onOpenChange, serviceTitle }: ServiceModalP
     </Dialog>
   );
 }
-
