@@ -76,8 +76,7 @@ export function ServicesPreview() {
           </AnimatedText>
           <AnimatedText delay={0.2}>
             <p className="text-muted-foreground text-lg">
-              From startup registrations to complex audits, we provide end-to-end services 
-              to keep your business compliant and financially healthy.
+              From startup registrations to complex audits, we provide end-to-end tax and compliance services in Bengaluru, Kengeri, and Hoskote to keep your business compliant and financially healthy.
             </p>
           </AnimatedText>
         </div>

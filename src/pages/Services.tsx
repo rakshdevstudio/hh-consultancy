@@ -11,6 +11,7 @@ import { AnimatedSection, AnimatedText } from "@/components/ui/AnimatedSection";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/button";
 import { ServiceModal } from "@/components/ServiceModal";
+import { SEO } from "@/components/SEO";
 
 // Import service images
 import registrationImg from "@/assets/services/registration.jpg";
@@ -137,6 +138,19 @@ const serviceCategories = [
       "Regulatory Updates & Guidance",
     ],
   },
+  {
+    id: "payroll",
+    icon: Users,
+    title: "Payroll",
+    description: "Payroll services for accurate salary processing and statutory compliance.",
+    image: payrollImg,
+    services: [
+      "Preparation of salary statements",
+      "Provident Fund (PF) consultancy",
+      "ESI compliance",
+      "Professional Tax consultancy",
+    ],
+  },
 ];
 
 const Services = () => {
@@ -144,6 +158,11 @@ const Services = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Our Services | Tax, GST, Audit & Compliance in Bengaluru – H & H Consultancy"
+        description="Comprehensive tax, GST, audit, company registration, and compliance services in Bengaluru, Kengeri, and Hoskote. Professional support for all your business needs."
+        keywords="tax services Bengaluru, GST filing Kengeri, audit services Hoskote, company registration Bangalore, FSSAI license Bengaluru, trade license Kengeri, labour license Hoskote"
+      />
       <ServiceModal
         open={selectedService !== null}
         onOpenChange={(open) => !open && setSelectedService(null)}
@@ -154,7 +173,7 @@ const Services = () => {
         <div className="absolute inset-0">
           <img 
             src={gstTaxImg} 
-            alt="Tax and compliance services"
+            alt="GST and tax compliance services in Bengaluru, Kengeri, and Hoskote"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
@@ -173,13 +192,12 @@ const Services = () => {
               </AnimatedText>
               <AnimatedText delay={0.1}>
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white mt-4 mb-6 leading-tight">
-                  Complete Financial & Compliance Solutions
+                  Professional Tax & Compliance Services in Bengaluru
                 </h1>
               </AnimatedText>
               <AnimatedText delay={0.2}>
                 <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8">
-                  From business registrations to audits, we provide comprehensive services 
-                  to keep your business compliant and financially healthy.
+                  From business registrations to audits, we provide comprehensive tax and compliance services in Bengaluru, Kengeri, and Hoskote to keep your business compliant and financially healthy.
                 </p>
               </AnimatedText>
               <AnimatedSection delay={0.3}>
@@ -242,13 +260,12 @@ const Services = () => {
             </AnimatedText>
             <AnimatedText delay={0.1}>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mt-4 mb-6">
-                Comprehensive Services for Your Business
+                Our Professional Services in Kengeri & Bengaluru
               </h2>
             </AnimatedText>
             <AnimatedText delay={0.2}>
               <p className="text-muted-foreground text-lg">
-                We offer a full range of financial and compliance services tailored to meet 
-                the unique needs of your business.
+                We offer a full range of financial and compliance services in Bengaluru, Kengeri, and Hoskote, tailored to meet the unique needs of your business.
               </p>
             </AnimatedText>
           </div>
@@ -267,7 +284,7 @@ const Services = () => {
                     <div className="relative overflow-hidden rounded-3xl shadow-soft-xl">
                       <img 
                         src={category.image} 
-                        alt={category.title}
+                        alt={`${category.title} services in Bengaluru, Kengeri, and Hoskote`}
                         className="w-full h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />

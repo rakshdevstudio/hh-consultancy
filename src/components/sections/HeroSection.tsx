@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
-          alt="Professional consulting team"
+          alt="Professional tax and compliance consultants in Bengaluru, Kengeri, and Hoskote"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
@@ -43,13 +43,13 @@ export function HeroSection() {
 
             <AnimatedText delay={0.1}>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight mb-6">
-                Your Complete Compliance & Taxation Partner
+                Tax, GST, Audit & Compliance Services in Bengaluru
               </h1>
             </AnimatedText>
 
             <AnimatedText delay={0.2}>
               <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-xl">
-                From business registrations to tax planning and audits, H & H Consultancy provides end-to-end financial, compliance, and licensing services to help your business grow with confidence.
+                From business registrations to tax planning and audits, H & H Consultancy provides end-to-end financial, compliance, and licensing services in Bengaluru, Kengeri, and Hoskote to help your business grow with confidence.
               </p>
             </AnimatedText>
 

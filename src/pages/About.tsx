@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection, AnimatedText } from "@/components/ui/AnimatedSection";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { SEO } from "@/components/SEO";
 import { Target, Eye, Heart, Award, Shield, CheckCircle, Star, Users } from "lucide-react";
 import heroImage from "@/assets/hero-consulting.jpg";
 
@@ -44,7 +45,7 @@ const About = () => {
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="Professional consulting team"
+            alt="Professional tax and compliance consulting team at H & H Consultancy in Bengaluru, Kengeri, and Hoskote"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
@@ -66,12 +67,12 @@ const About = () => {
             </AnimatedText>
             <AnimatedText delay={0.2}>
               <p className="text-white/80 text-lg md:text-xl leading-relaxed">
-                H & H Consultancy is a Bengaluru-based professional firm providing audit, taxation, compliance, and business licensing services. Founded and led by Shivakumar H (B.Com, CA-Inter), the firm is committed to delivering accurate, ethical, and timely solutions for individuals, startups, and established businesses.
+                H & H Consultancy is a Bengaluru-based professional firm providing audit, taxation, compliance, and business licensing services in Kengeri, Hoskote, and across Bengaluru. Founded and led by Shivakumar H (B.Com, CA-Inter), the firm is committed to delivering accurate, ethical, and timely solutions for individuals, startups, and established businesses.
               </p>
             </AnimatedText>
             <AnimatedText delay={0.3}>
               <p className="text-white/80 text-lg md:text-xl leading-relaxed mt-4">
-                With a strong focus on regulatory compliance, financial transparency, and client success, H & H Consultancy helps organizations navigate complex tax laws, registrations, and statutory requirements with confidence.
+                With a strong focus on regulatory compliance, financial transparency, and client success, H & H Consultancy helps organizations in Bengaluru, Kengeri, and Hoskote navigate complex tax laws, registrations, and statutory requirements with confidence.
               </p>
             </AnimatedText>
           </div>

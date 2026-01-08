@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { SEO } from "@/components/SEO";
 import heroImage from "@/assets/hero-consulting.jpg";
 
 const contactInfo = [
@@ -85,12 +86,17 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Contact H & H Consultancy | Tax & Compliance Experts in Kengeri, Bengaluru"
+        description="Contact H & H Consultancy in Kengeri and Hoskote, Bengaluru for expert tax, GST, audit, and compliance services. Get in touch with our team today."
+        keywords="tax consultant contact Bengaluru, GST services Kengeri, audit services Hoskote, contact tax expert Bangalore"
+      />
       {/* Hero */}
       <section className="section-padding relative overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="Contact us"
+            alt="Contact H & H Consultancy office in Kengeri, Bengaluru for tax and compliance services"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40" />
@@ -107,13 +113,12 @@ const Contact = () => {
             </AnimatedText>
             <AnimatedText delay={0.1}>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white mt-4 mb-6 leading-tight">
-                Let's Start a Conversation
+                Contact Our Tax & Compliance Experts in Bengaluru
               </h1>
             </AnimatedText>
             <AnimatedText delay={0.2}>
               <p className="text-white/80 text-lg md:text-xl leading-relaxed">
-                Whether you have questions about our services or want to discuss 
-                a potential engagement, we're here to help.
+                Whether you have questions about our tax, GST, or compliance services in Kengeri, Hoskote, or Bengaluru, or want to discuss a potential engagement, we're here to help.
               </p>
             </AnimatedText>
           </div>
@@ -128,7 +133,7 @@ const Contact = () => {
             <div className="lg:col-span-2 space-y-6">
               <AnimatedText>
                 <h2 className="font-display text-2xl font-semibold text-foreground mb-8">
-                  Get in Touch
+                  Visit Our Office in Kengeri, Bengaluru
                 </h2>
               </AnimatedText>
 
