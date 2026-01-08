@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
@@ -9,6 +10,7 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection, AnimatedText } from "@/components/ui/AnimatedSection";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/button";
+import { ServiceModal } from "@/components/ServiceModal";
 
 // Import service images
 import registrationImg from "@/assets/services/registration.jpg";
@@ -138,8 +140,15 @@ const serviceCategories = [
 ];
 
 const Services = () => {
+  const [selectedService, setSelectedService] = useState<string | null>(null);
+
   return (
     <Layout>
+      <ServiceModal
+        open={selectedService !== null}
+        onOpenChange={(open) => !open && setSelectedService(null)}
+        serviceTitle={selectedService || ""}
+      />
       {/* Hero Section */}
       <section className="section-padding relative overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0">
@@ -250,9 +259,10 @@ const Services = () => {
                 <div className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   {/* Image Side */}
                   <motion.div 
-                    className={`relative group ${index % 2 === 1 ? 'lg:order-2' : ''}`}
+                    className={`relative group cursor-pointer ${index % 2 === 1 ? 'lg:order-2' : ''}`}
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.4 }}
+                    onClick={() => setSelectedService(category.title)}
                   >
                     <div className="relative overflow-hidden rounded-3xl shadow-soft-xl">
                       <img 
@@ -275,8 +285,9 @@ const Services = () => {
                   {/* Content Side */}
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                     <GlassCard
-                      className="h-full"
+                      className="h-full cursor-pointer hover:shadow-glass-lg transition-all duration-300"
                       variant="strong"
+                      onClick={() => setSelectedService(category.title)}
                     >
                       <div className="flex items-center gap-4 mb-4">
                         <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">

@@ -12,8 +12,7 @@ const footerLinks = {
     { label: "Tax Consulting", href: "/services" },
   ],
   resources: [
-    { label: "Blogs", href: "/insights" },
-    { label: "Case Studies", href: "/insights" },
+    { label: "Case Studies", href: "/services" },
     { label: "Contact", href: "/contact" },
   ],
 };

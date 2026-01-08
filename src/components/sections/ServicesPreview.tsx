@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
@@ -6,6 +7,7 @@ import {
 } from "lucide-react";
 import { AnimatedSection, AnimatedText } from "@/components/ui/AnimatedSection";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { ServiceModal } from "@/components/ServiceModal";
 
 const services = [
   {
@@ -51,8 +53,15 @@ const services = [
 ];
 
 export function ServicesPreview() {
+  const [selectedService, setSelectedService] = useState<string | null>(null);
+
   return (
     <section className="section-padding bg-gradient-to-b from-background to-secondary/30">
+      <ServiceModal
+        open={selectedService !== null}
+        onOpenChange={(open) => !open && setSelectedService(null)}
+        serviceTitle={selectedService || ""}
+      />
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <AnimatedText>
@@ -79,6 +88,7 @@ export function ServicesPreview() {
               <GlassCard
                 className="h-full group cursor-pointer hover:shadow-glass-lg transition-all duration-500"
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                onClick={() => setSelectedService(service.title)}
               >
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 group-hover:scale-110 transition-all duration-300">
                   <service.icon className="w-6 h-6 text-accent" />
